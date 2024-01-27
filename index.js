@@ -1,8 +1,11 @@
-let discount = document.getElementById('discount-button');
+let click = document.getElementById('click-button');
 let message = document.getElementById('message');
+let messages = ["โอ้ เย", "เอ้ โย", "โก โก้", "โถ่ ถัง", "กะละมัง ซักผ้า"];
 
-function show_message(){
-    message.innerHTML = "<p>กดทำไม</p>"
-}
+        function showRandomMessage(){
+            let randomIndex = Math.floor(Math.random() * messages.length);
+            
+            message.innerHTML = "<p>" + messages[randomIndex] + "</p>";
+        }
 
-discount.addEventListener('click',show_message)
+click.addEventListener('click',showRandomMessage);
