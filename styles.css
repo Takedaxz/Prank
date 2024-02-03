@@ -1,0 +1,26 @@
+body { font-family: sans-serif; }
+
+div {
+  text-align: center;
+}
+
+
+span {
+  color: black;
+  padding: 1.5rem;
+  font-size:3rem;
+  display: inline-block;
+}
+
+span.vertical-shake {
+  animation: vertical-shaking 0.35s infinite;
+}
+
+
+@keyframes vertical-shaking {
+  0% { transform: translateY(0) }
+  25% { transform: translateY(5px) }
+  50% { transform: translateY(-5px) }
+  75% { transform: translateY(5px) }
+  100% { transform: translateY(0) }
+}
